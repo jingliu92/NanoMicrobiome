@@ -267,3 +267,16 @@ The modular design will facilitate future expansion to include machine learning-
 
 These advantages make ONT particularly suitable for food safety surveillance, environmental monitoring, and outbreak investigations.
 
+# Run code:
+```
+cd /git/bioinf_MinION
+```
+```
+./metagminion.sh \
+    /data/pipelineInput/Nanopore/MG_09022026/09022026.fastq.gz \
+    /data/pipelineOutput/Nanopore/MG_09022026 \
+    ITS \
+    minimap2 \
+    /data/pipelineInput/Nanopore/MG_09022026/sample_map.tsv \
+    --skip-demultiplex
+```
